@@ -1,0 +1,54 @@
+body {
+	width: 960px;
+	margin: auto;
+	font-size: 18px;
+	line-height: 34px;
+
+	
+}
+.crystals {
+	max-width: 150px;
+	width: 100%;
+	max-height: 150px;
+	height: 100%; 
+}
+
+#header {
+	background-color: #777;
+	margin: 10px;
+	margin: 10px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 24px;
+}
+
+#instructions {
+	background-color: #777;
+	margin: 10px;
+	padding: 20px;
+}
+
+#numbers {
+	background-color: #777;
+	margin: 10px;
+	padding: 20px;
+	float: left;
+}
+
+
+#scoreboard {
+	background-color: #777;
+	margin: 10px;
+	padding: 20px;
+	float: left;
+}
+
+
+
+
+
+#crystalDiv {
+	float: left;
+}

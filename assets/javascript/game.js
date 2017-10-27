@@ -12,7 +12,7 @@ window.onload = function() {
 		c4value;
 	var allCrystals = [];
 
-// function to generate random # between 1-12
+
 //crystals
 	function magicNumberGenerator() {
 		magicNumber = Math.floor((Math.random() * 120) +19);
@@ -20,6 +20,9 @@ window.onload = function() {
 	}
 	magicNumberGenerator();
 
+	$('#magicNumber').html('<p> Magic Number: ' + magicNumber + '</p>');
+	
+// function to generate random # between 1-12
 	function crystalValueGenerator() {
 		crystalValue = Math.floor((Math.random() * 12) +1);
 		return crystalValue;
@@ -83,7 +86,7 @@ window.onload = function() {
 	// magicNumberGenerator();
 	// console.log(magicNumber);
 
-	$('#magicNumber').html('<p> Magic Number: ' + magicNumber + '</p>');
+	
 
 	/*
 	$('.crystals').click(function() {
@@ -97,57 +100,65 @@ window.onload = function() {
 		alert(allCrystals[0]);
 		playerNumber += allCrystals[0];
 		$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
+			
+			if (playerNumber > magicNumber) {
+			losses();
+			} else {
+			};
+
+			if (playerNumber == magicNumber) {
+			win();
+			} else{
+			};
 	});
 
 	$('#c2value').on('click', function(){
 		alert(allCrystals[1]);
 		playerNumber += allCrystals[1];
 		$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
+			
+			if (playerNumber > magicNumber) {
+			losses();
+			} else {
+			};
+
+			if (playerNumber == magicNumber) {
+			win();
+			} else{
+			};
 	});
 
 	$('#c3value').on('click', function(){
 		alert(allCrystals[2]);
 		playerNumber += allCrystals[2];
 		$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
+			
+			if (playerNumber > magicNumber) {
+			losses();
+			} else {
+			};
+
+			if (playerNumber == magicNumber) {
+			win();
+			} else{
+			};
+			
 	});
 
 	$('#c4value').on('click', function(){
 		alert(allCrystals[3]);
 		playerNumber += allCrystals[3];
 		$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
+			
+			if (playerNumber > magicNumber) {
+			losses();
+			} else {
+			};
+
+			if (playerNumber == magicNumber) {
+			win();
+			} else{
+			};
 	});
-
-	if (playerNumber == magicNumber) {
-		win();
-	} else{
-	};
-	if (playerNumber > magicNumber) {
-		losses();
-	} else {
-	};
-
-
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 };
