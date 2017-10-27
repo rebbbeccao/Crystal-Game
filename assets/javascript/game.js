@@ -21,7 +21,7 @@ window.onload = function() {
 	magicNumberGenerator();
 
 	$('#magicNumber').html('<p> Magic Number: ' + magicNumber + '</p>');
-	
+
 // function to generate random # between 1-12
 	function crystalValueGenerator() {
 		crystalValue = Math.floor((Math.random() * 12) +1);
@@ -44,10 +44,6 @@ window.onload = function() {
 
 	// alert(allCrystals);
 
-
-
-
-
 	//$('#c1value').attr('value', crystalValueGenerator()); 
 	
 	//$('#c2value').attr('value', crystalValueGenerator());
@@ -67,19 +63,19 @@ window.onload = function() {
 		c4value;		
 	}	
 
-	function win() {
-		alert('You won!');
-		reset();
-		wins++;
-		$('#wins').html('Wins: ' + wins);
-	}
+	// function win() {
+	// 	alert('You won!');
+	// 	reset();
+	// 	wins++;
+	// 	$('#wins').html('Wins: ' + wins);
+	// }
 
-	function losses() {
-		alert('Darn, Try Again!');
-		reset();
-		losses++;
-		$('losses').html('Losses: ' + losses);
-	}
+	// function losses() {
+	// 	alert('Darn, Try Again!');
+	// 	reset();
+	// 	losses++;
+	// 	$('losses').html('Losses: ' + losses);
+	// }
 	
 
 
@@ -88,76 +84,122 @@ window.onload = function() {
 
 	
 
-	/*
-	$('.crystals').click(function() {
-		chosenCrystalValue = this.value;
-		console.log(chosenCrystalValue);
-		playerNumber += chosenCrystalValue;
-		console.log(playerNumber);
-	});*/
 
 	$('#c1value').on('click', function(){
-		alert(allCrystals[0]);
-		playerNumber += allCrystals[0];
-		$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
 			
 			if (playerNumber > magicNumber) {
-			losses();
+						function losses() {
+							alert('Darn, Try Again!');
+							reset();
+							losses++;
+							$('losses').html('Losses: ' + losses);
+						}
 			} else {
+				alert(allCrystals[0]);
+				playerNumber += allCrystals[0];
+				$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
 			};
 
 			if (playerNumber == magicNumber) {
-			win();
+						function win() {
+							alert('You won!');
+							reset();
+							wins++;
+							$('#wins').html('Wins: ' + wins);
+						}
 			} else{
+				alert(allCrystals[0]);
+				playerNumber += allCrystals[0];
+				$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
 			};
+		
 	});
 
 	$('#c2value').on('click', function(){
-		alert(allCrystals[1]);
-		playerNumber += allCrystals[1];
-		$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
 			
 			if (playerNumber > magicNumber) {
-			losses();
+						function losses() {
+							alert('Darn, Try Again!');
+							reset();
+							losses++;
+							$('losses').html('Losses: ' + losses);
+						}
 			} else {
+				alert(allCrystals[1]);
+				playerNumber += allCrystals[1];
+				$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
 			};
 
 			if (playerNumber == magicNumber) {
-			win();
+						function win() {
+							alert('You won!');
+							reset();
+							wins++;
+							$('#wins').html('Wins: ' + wins);
+						}
 			} else{
+				alert(allCrystals[1]);
+				playerNumber += allCrystals[1];
+				$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
 			};
 	});
 
 	$('#c3value').on('click', function(){
-		alert(allCrystals[2]);
-		playerNumber += allCrystals[2];
-		$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
-			
+		
 			if (playerNumber > magicNumber) {
-			losses();
+						function losses() {
+							alert('Darn, Try Again!');
+							reset();
+							losses++;
+							$('losses').html('Losses: ' + losses);
+						}
 			} else {
+				alert(allCrystals[2]);
+				playerNumber += allCrystals[2];
+				$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
 			};
 
 			if (playerNumber == magicNumber) {
-			win();
+						function win() {
+							alert('You won!');
+							reset();
+							wins++;
+							$('#wins').html('Wins: ' + wins);
+						}
 			} else{
-			};
-			
+				alert(allCrystals[2]);
+				playerNumber += allCrystals[2];
+				$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
+			};	
 	});
 
 	$('#c4value').on('click', function(){
-		alert(allCrystals[3]);
-		playerNumber += allCrystals[3];
-		$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
+		
 			
 			if (playerNumber > magicNumber) {
-			losses();
+						function losses() {
+							alert('Darn, Try Again!');
+							reset();
+							losses++;
+							$('losses').html('Losses: ' + losses);
+						}
 			} else {
+				alert(allCrystals[3]);
+				playerNumber += allCrystals[3];
+				$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
 			};
 
 			if (playerNumber == magicNumber) {
-			win();
+						function win() {
+							alert('You won!');
+							reset();
+							wins++;
+							$('#wins').html('Wins: ' + wins);
+						}
 			} else{
+				alert(allCrystals[3]);
+				playerNumber += allCrystals[3];
+				$('#playerNumber').html('<p>Player Status: ' + playerNumber + '</p>');
 			};
 	});
 
