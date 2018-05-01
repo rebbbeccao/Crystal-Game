@@ -3,16 +3,21 @@ body {
   margin: auto;
   font-size: 18px;
   line-height: 34px;
+  background-image: url('../images/crystal-background.jpg');
+  background-size: 100%;
+  font-family: 'Poiret One', cursive;
 }
 .crystals {
   max-width: 95px;
   width: 100%;
   max-height: 95px;
   height: 100%;
+  box-shadow: 10px 10px 5px black;
 }
 
 #header {
   background-color: #777;
+  box-shadow: 10px 10px 5px white;
   margin: 10px;
   margin: 10px;
 }
@@ -21,16 +26,20 @@ h1 {
   text-align: center;
   font-size: 28px;
   padding: 30px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
 }
 
 #instructions {
   background-color: #777;
+  box-shadow: 10px 10px 5px white;
   margin: 10px;
   padding: 20px;
 }
 
 #numbers {
   background-color: #777;
+  box-shadow: 10px 10px 5px white;
   margin: 10px;
   padding: 20px;
   float: right;
@@ -39,6 +48,7 @@ h1 {
 
 #scoreboard {
   background-color: #777;
+  box-shadow: 10px 10px 5px white;
   margin: 10px;
   padding: 20px;
   float: left;
