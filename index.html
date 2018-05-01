@@ -1,61 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Crystals Collector</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/javascript/game.js"></script> 
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 
 </head>
-<body>
-	
-	<div id="header"><h1>Crystals Collector!
-	</h1></div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-sm-6">
+<body>
+
+	<div id="header">
+		<h1>Crystals Collector!
+		</h1>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
 				<div id="instructions">
 					<p>You will be given a random, "Magic Number" at the start of the game.</p>
 					<p>There are four crystals below, By clicking on a crystal you will add a specific amount of of points to your total score.</p>
-					<p>You win the game by matching your total score to the Magic Number. However you loose the game if your score goes above the Magic Number.</p>
+					<p>You win the game by matching your total score to the Magic Number. However you loose the game if your score goes above
+						the Magic Number.</p>
 					<p>Easy right? Here's the catch...</p>
 					<p>The value of each crystal is hidden from you until you click on it.</p>
-					<p>Click weary! At the start of each game the crystals value will change.</p>
+					<p>Click wearily! At the start of each game the crystals value will change.</p>
 				</div>
-		</div>	
-			
-		<div class="col-sm-6">
-			<div class="row">
-				<div id="scoreboard">
-					<div id="wins">Wins: 0</div>
-					<div id="losses">Losses: 0</div>
-				</div>
+			</div>
 
-				<div id="numbers">
-					<div id="magicNumber">Magic Number: </div>
-					<div id="playerNumber">PlayerGuess:</div>
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-6">
+						<div id="scoreboard">
+							<div id="wins">Wins: 0</div>
+							<div id="losses">Losses: 0</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div id="numbers">
+							<div id="magicNumber">Magic Number: </div>
+							<div id="playerNumber">Player Status:</div>
+						</div>
+					</div>
 				</div>
-			</div>	
-			<div class="row">
-				<div id="crystalDiv">
-					<img class="crystals" id="c1value" src="assets/images/pink.jpg">  
-					<img class="crystals" id="c2value" src="assets/images/white.jpg"> 
-			
-					<img class="crystals" id="c3value" src="assets/images/two.jpg"> 
-					<img class="crystals" id="c4value" src="assets/images/purple.jpg"> 
-					
+				<div class="row">
+					<div id="crystalDiv">
+						<div class="row">
+							<div class="col-sm-3">
+								<img class="crystals" id="c1value" src="assets/images/pink.jpg">
+							</div>
+							<div class="col-sm-3">
+								<img class="crystals" id="c2value" src="assets/images/white.jpg">
+							</div>
+							<div class="col-sm-3">
+								<img class="crystals" id="c3value" src="assets/images/two.jpg">
+							</div>
+							<div class="col-sm-3">
+								<img class="crystals" id="c4value" src="assets/images/purple.jpg">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-	
+
 
 </body>
+
 </html>
